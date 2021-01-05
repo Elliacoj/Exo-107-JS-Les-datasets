@@ -48,3 +48,13 @@ if(p8.dataset.booleanTest === "ok") {
 else {
     p8.innerHTML = "C'est incorrect";
 }
+
+let Utilisateur =  {
+    nom : "john",
+    prenom: "Doe"
+}
+
+let para = document.createElement("p");
+document.body.append(para);
+para.id = "p9";
+para.dataset.nomPrenom = Utilisateur.nom + " " + Utilisateur.prenom;
